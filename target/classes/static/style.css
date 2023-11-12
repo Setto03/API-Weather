@@ -1,0 +1,92 @@
+
+body {
+    background-color: aliceblue;
+}
+
+/* Fade in effect at start */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.title,
+#heading {
+    animation-delay: 0s;
+}
+
+.text {
+    animation-delay: 0.15s;
+}
+
+.button {
+    animation-delay: 0.3s;
+}
+
+/* Form */
+.input-text {
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Content */
+#flex-container {
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+.staircase {
+    display: flex;
+    flex-direction: column;
+}
+
+.staircase-left {
+    align-items: flex-end;
+}
+
+.staircase-right {
+    align-items: flex-start;
+}
+
+.staircase div {
+    padding: 0 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    background-color: white;
+    align-items: center;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.middle {
+    flex-grow: 1;
+    margin: 0 1em;
+    height: 200px;
+}
+
+/* Fade in effect for content */
+.fade {
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+}
+
+.el-1 {
+    animation-delay: 1.2s;
+}
+
+.el-2 {
+    animation-delay: 1.4s;
+}
+
+.el-3 {
+    animation-delay: 1.6s;
+}
+
+.middle {
+    animation-delay: 2.5s;
+}
